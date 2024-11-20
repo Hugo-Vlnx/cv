@@ -1,0 +1,153 @@
+@media all and (max-width:1024px) {
+    #menu{
+        width: 80%;
+        padding:5%;
+    }
+}            
+
+
+@media (max-width: 500px) {
+    header {
+        height: auto;
+    }
+
+    #navigation {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #navigation li {
+        margin-bottom: 5px;
+    }
+
+    #accueil {
+        padding: 20px;
+        font-size: 90%;
+    }
+
+    #pfp {
+        width: 50%; 
+        margin-top: 10px;
+    }
+
+    #educationExperience {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #description {
+        column-count: 1; 
+        border-right: none;
+        padding: 10px;
+    }
+
+    .photos figure {
+        width: 100%; 
+    }
+
+    #competencesLoisirs {
+        flex-direction: column;
+    }
+
+    .competencesLangues, .loisirs {
+        width: 100%;
+    }
+
+    .loisirs {
+        grid-template-columns: 1fr; 
+    }
+
+    .competenceArrangement {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .cercle {
+        width: 150px; 
+        height: 150px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .contact .icone img {
+        width: 20px; 
+        height: 20px;
+    }
+}
+
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    header {
+        height: auto;
+    }
+
+    #navigation {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #accueil {
+        padding: 30px;
+        font-size: 100%;
+    }
+
+    #pfp {
+        width: 30%; 
+    }
+
+    #educationExperience {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #description {
+        column-count: 1;
+        padding: 10px;
+    }
+
+    .photos figure {
+        width: 45%; 
+    }
+
+    #competencesLoisirs {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .competencesLangues, .loisirs {
+        width: 100%;
+    }
+
+    .loisirs {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .competenceArrangement {
+        flex-wrap: wrap;
+        gap: 4em;
+    }
+
+    .cercle {
+        width: 180px; 
+        height: 180px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact .icone img {
+        width: 24px;
+        height: 24px;
+    }
+}

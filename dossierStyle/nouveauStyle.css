@@ -1,0 +1,330 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+}
+h1, h2, h3{
+    text-decoration: underline;
+}
+a{
+    color: #fff;
+}
+
+a:hover {
+    color: #717285;
+}
+header {
+    width: 100%;
+    height: 10%;
+    background-color: #000000;
+    margin: 0px;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Oxanium", sans-serif;
+}
+#contactAccueil
+{
+  background-color: rgb(51, 51, 51,0.6);
+}
+
+#accueil {
+    
+    background-image: url(/imgcv/zelda.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  
+    padding: 30px;
+    color: #000000;
+}
+
+#pfp {
+    width: 15%;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 10px solid #000000;
+}
+
+#accueil h1 {
+    font-size: 100%;
+    margin: 20px;
+    text-decoration: underline ;
+}
+
+#accueil h2 {
+    font-size: 150%;
+}
+section{
+    padding: 10px;
+    margin: 0px;
+}
+section:not(#accueil) {
+
+    background-color: rgba(46, 52, 109, 0.8);
+    background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+   
+    
+}
+
+#contactAccueil
+{
+  background-color: rgb(51, 51, 51,0.3);
+  
+}
+#educationExperience {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+   
+    padding: 5%;
+}
+
+.photos {
+    width: 90%;
+    height: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.photos img {
+    width: 100%;
+    height: 100%; 
+}
+
+.photos img:hover {
+    transform: scale(1.1);
+}
+.photos figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    
+}
+.photos figcaption {
+    margin-top: 10px;
+    font-size: 100%;
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline ;
+}
+
+
+#educationExperience #description {
+    text-align: left;
+    column-count: 2; 
+    column-gap: 20px;
+   height: 150%;
+   border-right: 5px solid #333549;
+   
+    
+}
+
+#educationExperience .photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+     
+}
+
+#competence {
+    border-top: 5px solid #333549;
+}
+#competencesLoisirs {
+    display: flex;
+    width: 100%;
+   
+   
+}
+
+.competencesLangues {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.loisirs {
+    flex: 1; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+}
+
+
+#competence {
+    padding: 2em;
+}
+
+.competenceArrangement {
+    display: flex;
+    gap: 10em;
+    flex-wrap: wrap;
+}
+
+.competenceStyle {
+    text-align: center;
+}
+
+.cercle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+    background: conic-gradient(
+        #ac97b4 calc(var(--percentage) * 1%), 
+        rgb(0, 0, 0, 0.50) 10%
+    );
+    position: relative;
+}
+
+.cercle::before {
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.langage {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.langue {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nomLangue {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.badgeNiveau {
+    width: 5%;
+    height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.niveauC2 {
+    background-color: #ac97b4;
+}
+
+.niveauB2 {
+    background-color: #e1c0c9; 
+}
+
+
+.carte {
+    width: 100%;
+    perspective: 1000px;
+}
+
+
+.interieur-carte {
+    position: relative;
+    width: 100%;
+    height: 190px; 
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.carte:hover .interieur-carte {
+    transform: rotateY(180deg);
+}
+
+
+.recto-carte, .verso-carte {
+    position: absolute;
+    width: 80%;
+    height: 230%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.recto-carte img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.verso-carte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333549;
+    color: #fff;
+    transform: rotateY(180deg);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.jeu
+{
+    color: #fff;
+}
+
+footer {
+    background-color: #111; 
+    color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+
+.contact {
+    display: flex;
+    gap: 15px; 
+}
+
+.contact .icone img {
+    width: 24px; 
+    height: 24px;
+    transition: transform 0.3s; 
+}
+
+.contact .icone:hover img {
+    transform: scale(1.1); 
+}
